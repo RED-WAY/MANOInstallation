@@ -35,7 +35,7 @@ if [ \"$confirm\" == \"S\" ]
 					sleep 2
 					sudo apt -qq update && sudo apt -qq upgrade -y
 					clear
-	
+
 					if [ $JAVA_VERSION -eq 11 ]
 						then
 							echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7) Instalando JAVA na versão 11..."
@@ -58,6 +58,8 @@ if [ \"$confirm\" == \"S\" ]
 	sleep 2
 	wget --no-check-certificate --content-disposition -O $HOME/manOS.jar https://github.com/RED-WAY/MANOInstallation/raw/main/manOS.jar
 	
+	else
+		echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7) Digito inválido!"
 fi
 echo "Finalizando instalação..."
 sleep 2
