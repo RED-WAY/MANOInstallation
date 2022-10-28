@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PURPLE='0;35'
-NC='\033[0m'
+#https://github.com/RED-WAY/MANOInstallation/raw/main/manOS.jar
+MANOS_URL=https://raw.githubusercontent.com/RED-WAY/MANOInstallation/main/manOS.jar
 JAVA_VERSION=11
 	
 echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7) Inicializando o instalador do man.OS"
@@ -56,7 +56,7 @@ if [ \"$confirm\" == \"S\" ]
 
 	echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7) Baixando o sistema man.OS..."
 	sleep 2
-	wget --no-check-certificate --content-disposition -O $HOME/manOS.jar https://github.com/RED-WAY/MANOInstallation/raw/main/manOS.jar
+	wget --no-check-certificate --content-disposition -O $HOME/manOS.jar $MANOS_URL
 	
 	else
 		echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7) Digito inválido!"
