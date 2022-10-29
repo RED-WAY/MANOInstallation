@@ -36,7 +36,7 @@ if [[ \"$confirm\" == \"s\" ]]
 					clear
 					echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7)  Atualizando sistema..."
 					sleep 2
-					sudo apt -qq update && sudo apt -qq upgrade -y
+					sudo apt update && sudo apt upgrade -y
 					clear
 
 					if [[ $JAVA_VERSION -eq 11 ]]
