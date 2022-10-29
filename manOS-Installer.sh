@@ -43,7 +43,9 @@ if [[ \"$confirm\" == \"s\" ]]
 						then
 							echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7) Instalando JAVA na versão 11..."
 							echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7) Confirme a instalação quando solicitado"
-							sudo apt -qq install default-jre ; apt -qq install openjdk-11-jre-headless; -y
+							sudo apt install default-jre -y
+							clear
+							sudo apt install openjdk-11-jre-headless -y
 							clear
 							echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7) Java instalado com sucesso!"
 							sleep 2
