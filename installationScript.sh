@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MANOS_URL=https://raw.githubusercontent.com/RED-WAY/MANOInstallation/main/manOS.jar
+MANOS_URL=https://raw.githubusercontent.com/RED-WAY/MANOInstallation/main/MANOJava-1.0-jar-with-dependencies.jar
 JAVA_VERSION=11
 
 clear
