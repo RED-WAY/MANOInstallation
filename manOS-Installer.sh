@@ -3,7 +3,7 @@
 JAVA_VERSION=11
 MANOS_OPTIONS="GUI CLI"
 MANOS_GUI_URL=https://raw.githubusercontent.com/RED-WAY/MANOInstallation/main/MANOJava-1.0-jar-with-dependencies.jar
-MANOS_CLI_URL=https://raw.githubusercontent.com/RED-WAY/MANOInstallation/main/installationScript.sh
+MANOS_CLI_URL=https://raw.githubusercontent.com/RED-WAY/MANOInstallation/main/manOS-installer.sh
 
 clear
 echo "$(tput setaf 10)[manoBOT]:$(tput setaf 7) Inicializando o instalador do man.OS..."
@@ -121,6 +121,13 @@ if [[ \"$confirm\" == \"s\" ]]
 	        	;;
 				esac
 	    fi
+
+		sudo apt install docker.io
+		sudo systemctl start docker
+		sudo systemctl enable docker
+		sudo docker pull mysql:5.7
+		sudo docker pull manojava-1.0-jar-with-dependencies.jar
+
 	done
 
 fi
